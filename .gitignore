@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+twitter-consumer/.gradle
+twitter-consumer/gradle
+twitter-consumer/out
+twitter-consumer/build
+twitter-provider/.gradle
+twitter-provider/build
+twitter-provider/gradle
+twitter-provider/out
+*.imi
+spring-cloud-contract-in-action.iml
