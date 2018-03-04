@@ -62,4 +62,14 @@ apply plugin: 'maven-publish'
 In your consumer test, that connect to the stub server through hte Feign client you need to place the below:
 
     @AutoConfigureStubRunner(ids = "com.cham.twitterprovider.code:twitter-provider:+:stubs:6565", workOffline = true)
+    
 
+##  Disabling Eureka in integration tests
+
+Spring Boot, Spring Cloud (with Netflix OSS) projects normally have Eureka integrated. For integration tests you can disable Eureka look ups as below.
+
+in test/resources/applicaiton.yaml place the below.
+
+eureka:
+  client:
+    enabled: false
